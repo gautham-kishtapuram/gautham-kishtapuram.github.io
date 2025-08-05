@@ -1,79 +1,764 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sai Gautham | Backend Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .section {
-            padding: 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        .tech-icons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-        .tech-icons div {
-            text-align: center;
-            font-size: 2.5rem;
-        }
-        .tech-icons img {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #222;
-            color: white;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Gautham Kishtapuram - Full Stack Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<header>
-    <h1>Sai Gautham Kishtapuram</h1>
-    <p>Java Backend Developer | Spring Boot | Kafka | AWS</p>
-</header>
-
-<section class="section">
-    <h2>Tech Stack</h2>
-    <div class="tech-icons">
-        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><br>Java</div>
-        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" /><br>Spring Boot</div>
-        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" /><br>Kafka</div>
-        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" /><br>Docker</div>
-        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" /><br>Jenkins</div>
-        <div><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" /><br>AWS</div>
-        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /><br>MongoDB</div>
-        <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /><br>Git</div>
+    <!-- Terminal Header -->
+    <div class="terminal-header">
+        <div class="terminal-controls">
+            <span class="control close"></span>
+            <span class="control minimize"></span>
+            <span class="control maximize"></span>
+        </div>
+        <div class="terminal-title">sai-gautham@portfolio:~$</div>
     </div>
-</section>
 
-<footer>
-    <p>&copy; 2025 Sai Gautham K. Built with ❤️ using HTML & CSS.</p>
-</footer>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="prompt">$</span> <span class="command">whoami</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">./home</a>
+                <a href="#about" class="nav-link">./about</a>
+                <a href="#skills" class="nav-link">./skills</a>
+                <a href="#projects" class="nav-link">./projects</a>
+                <a href="#experience" class="nav-link">./experience</a>
+                <a href="#contact" class="nav-link">./contact</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="terminal-window">
+                    <div class="terminal-content">
+                        <div class="code-line">
+                            <span class="prompt">sai-gautham@portfolio:~$</span> 
+                            <span class="command">cat introduction.txt</span>
+                        </div>
+                        <div class="output">
+                            <h1 class="hero-title">
+                                <span class="comment">// Hello World! I'm</span><br>
+                                <span class="class-name">Sai Gautham Kishtapuram</span>
+                            </h1>
+                            <h2 class="hero-subtitle">
+                                <span class="keyword">class</span> <span class="class-name">FullStackEngineer</span> <span class="keyword">extends</span> <span class="class-name">Developer</span>
+                            </h2>
+                            <p class="hero-description">
+                                <span class="comment">/*</span><br>
+                                <span class="comment">* Results-driven Full Stack Engineer with 3+ years</span><br>
+                                <span class="comment">* of experience building scalable microservices</span><br>
+                                <span class="comment">* and responsive UI integrations using Java 17,</span><br>
+                                <span class="comment">* Spring Boot, and React.js</span><br>
+                                <span class="comment">*/</span>
+                            </p>
+                        </div>
+                        <div class="code-line">
+                            <span class="prompt">sai-gautham@portfolio:~$</span> 
+                            <span class="command typing-animation">ls -la projects/</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-terminal"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-tabs">
+                            <div class="tab active">
+                                <i class="fab fa-java"></i> Main.java
+                            </div>
+                            <div class="tab">
+                                <i class="fab fa-react"></i> App.jsx
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editor-content">
+                        <div class="line-numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                        </div>
+                        <div class="code">
+                            <div class="code-line">
+                                <span class="keyword">public class</span> <span class="class-name">Developer</span> {
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;<span class="keyword">private</span> <span class="type">String</span> name = <span class="string">"Sai Gautham"</span>;
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;<span class="keyword">private</span> <span class="type">String[]</span> skills = {
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>,
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"React.js"</span>, <span class="string">"Kafka"</span>
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;};
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;<span class="keyword">public void</span> <span class="method">code</span>() {
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Building amazing things!</span>
+                            </div>
+                            <div class="code-line">
+                                &nbsp;&nbsp;}
+                            </div>
+                            <div class="code-line">
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-icons">
+                    <div class="floating-icon icon-1"><i class="fab fa-java"></i></div>
+                    <div class="floating-icon icon-2"><i class="fab fa-react"></i></div>
+                    <div class="floating-icon icon-3"><i class="fas fa-database"></i></div>
+                    <div class="floating-icon icon-4"><i class="fab fa-docker"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="prompt">$</span> cat about.md
+                </h2>
+                <p class="section-subtitle"># About Me</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="markdown-content">
+                        <h3>## Full Stack Engineer with 3+ years of experience</h3>
+                        <p>
+                            I specialize in building **scalable, event-driven microservices** and **responsive UI integrations** 
+                            using Java 17, Spring Boot, and React.js. My expertise spans both backend and frontend development, 
+                            with deep knowledge in Kafka, RabbitMQ, and both SQL/NoSQL databases.
+                        </p>
+                        <p>
+                            I'm passionate about **clean code**, **design patterns**, and **DevOps practices**. 
+                            I love solving complex problems and building systems that can scale efficiently while 
+                            maintaining high performance and reliability.
+                        </p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>achievements.json</span>
+                            </div>
+                            <pre><code>{
+  "performance_improvement": "70%",
+  "cost_reduction": "50%",
+  "zero_downtime_migrations": true,
+  "mttr_improvement": "30%"
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="terminal-about">
+                        <div class="terminal-header-small">
+                            <div class="terminal-controls-small">
+                                <span class="control-small close"></span>
+                                <span class="control-small minimize"></span>
+                                <span class="control-small maximize"></span>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="ascii-art">
+                                <pre>
+    ╭─────────────────────╮
+    │   Full Stack Dev    │
+    │                     │
+                    │   Java ☕ React ⚛️   │
+    │   Spring 🍃 Kafka   │
+    │                     │
+    │   Building the      │
+    │   future, one       │
+    │   commit at a time  │
+    ╰─────────────────────╯
+                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="prompt">$</span> tree skills/
+                </h2>
+                <p class="section-subtitle"># Technology Stack</p>
+            </div>
+            <div class="skills-tree">
+                <div class="skill-category">
+                    <h3>📁 languages/</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java (8, 17)</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>📁 backend/</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring Boot</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Spring Security</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-plug"></i>
+                            <span>Spring Integration</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Spring Cloud</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📁 frontend/</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📁 databases/</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-elephant"></i>
+                            <span>PostgreSQL</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Elasticsearch</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📁 messaging/</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-stream"></i>
+                            <span>Apache Kafka</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>RabbitMQ</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📁 devops/</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Jenkins</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="prompt">$</span> ls -la projects/
+                </h2>
+                <p class="section-subtitle"># Featured Repositories</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <span>microservices-platform</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot active"></span>
+                            <span>Production</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Event-Driven Microservices Platform</h3>
+                        <p>Designed and developed scalable microservices using Java 17, Spring Boot, and event-driven architecture via Kafka and RabbitMQ. Integrated React.js UI components with server-side REST APIs.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>15 commits</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>Production Ready</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag java">Java 17</span>
+                            <span class="tech-tag spring">Spring Boot</span>
+                            <span class="tech-tag react">React.js</span>
+                            <span class="tech-tag kafka">Kafka</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <span>real-time-streaming</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot active"></span>
+                            <span>Active</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MongoDB to Kafka Streaming Service</h3>
+                        <p>Built a streaming service to push MongoDB Oplog data to Kafka for real-time analytics. Improved Kafka consumer throughput by 70% with better producer partitioning strategies.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-chart-line"></i>
+                                <span>70% faster</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-database"></i>
+                                <span>Real-time</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag java">Java</span>
+                            <span class="tech-tag spring">Spring Boot</span>
+                            <span class="tech-tag kafka">Kafka</span>
+                            <span class="tech-tag mongo">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-chart-bar"></i> Analytics
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">
+                            <i class="fas fa-folder"></i>
+                            <span>secure-api-gateway</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot active"></span>
+                            <span>Deployed</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure RESTful API Gateway</h3>
+                        <p>Developed RESTful APIs with secured access using Spring Security and JWT, implementing role-based access control. Migrated legacy messaging queues from RabbitMQ to Kafka with zero downtime.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>JWT Secured</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>Zero Downtime</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag spring">Spring Security</span>
+                            <span class="tech-tag jwt">JWT</span>
+                            <span class="tech-tag api">REST API</span>
+                            <span class="tech-tag kafka">Kafka</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="prompt">$</span> git log --oneline
+                </h2>
+                <p class="section-subtitle"># Professional Journey</p>
+            </div>
+            <div class="git-log">
+                <div class="commit-item">
+                    <div class="commit-hash">a7f3c2d</div>
+                    <div class="commit-content">
+                        <div class="commit-header">
+                            <h3>Full Stack Engineer @ Loyalty Methods</h3>
+                            <span class="commit-date">June 2022 - Present</span>
+                        </div>
+                        <div class="commit-message">
+                            <p><strong>feat:</strong> Designed and developed microservices using Java 17, Spring Boot, and event-driven architecture</p>
+                            <ul class="commit-details">
+                                <li><strong>perf:</strong> Improved Kafka consumer throughput by 70% with better partitioning strategies</li>
+                                <li><strong>feat:</strong> Integrated React.js UI components with server-side REST APIs for monitoring dashboards</li>
+                                <li><strong>security:</strong> Implemented JWT authentication and role-based access control</li>
+                                <li><strong>ops:</strong> Migrated legacy messaging queues from RabbitMQ to Kafka with zero downtime</li>
+                                <li><strong>cost:</strong> Reduced storage costs by 50% using Kafka Connect for data migration</li>
+                                <li><strong>monitoring:</strong> Published metrics to New Relic, improved MTTR by 30%</li>
+                            </ul>
+                        </div>
+                        <div class="commit-tech">
+                            <span class="tech-tag java">Java 17</span>
+                            <span class="tech-tag spring">Spring Boot</span>
+                            <span class="tech-tag react">React.js</span>
+                            <span class="tech-tag kafka">Kafka</span>
+                            <span class="tech-tag docker">Docker</span>
+                            <span class="tech-tag aws">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commit-item">
+                    <div class="commit-hash">b8e4d3f</div>
+                    <div class="commit-content">
+                        <div class="commit-header">
+                            <h3>Computer Science Engineering Graduate</h3>
+                            <span class="commit-date">2018 - 2022</span>
+                        </div>
+                        <div class="commit-message">
+                            <p><strong>education:</strong> Bachelor of Technology @ AVN Institute of Engineering and Technology</p>
+                            <ul class="commit-details">
+                                <li><strong>coursework:</strong> Network Security, Database Management, Software Development</li>
+                                <li><strong>foundation:</strong> Built strong programming fundamentals and system design principles</li>
+                                <li><strong>projects:</strong> Developed multiple academic projects using Java and web technologies</li>
+                            </ul>
+                        </div>
+                        <div class="commit-tech">
+                            <span class="tech-tag java">Java</span>
+                            <span class="tech-tag db">Database Systems</span>
+                            <span class="tech-tag security">Network Security</span>
+                            <span class="tech-tag web">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commit-item">
+                    <div class="commit-hash">c9f5e4a</div>
+                    <div class="commit-content">
+                        <div class="commit-header">
+                            <h3>Mountain Mover Award</h3>
+                            <span class="commit-date">2023</span>
+                        </div>
+                        <div class="commit-message">
+                            <p><strong>achievement:</strong> Recognized at Loyalty Methods for consistently achieving challenging targets</p>
+                            <ul class="commit-details">
+                                <li><strong>impact:</strong> Demonstrated exceptional performance in delivering high-quality solutions</li>
+                                <li><strong>leadership:</strong> Contributed significantly to team success and project outcomes</li>
+                                <li><strong>dedication:</strong> Consistently exceeded expectations with innovative approaches</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="prompt">$</span> curl -X GET /contact
+                </h2>
+                <p class="section-subtitle"># Let's Connect</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="terminal-contact">
+                        <div class="terminal-header-small">
+                            <div class="terminal-controls-small">
+                                <span class="control-small close"></span>
+                                <span class="control-small minimize"></span>
+                                <span class="control-small maximize"></span>
+                            </div>
+                            <span class="terminal-title-small">contact.json</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code>{
+  "name": "Sai Gautham Kishtapuram",
+  "role": "Full Stack Engineer",
+  "email": "ksaigautham@gmail.com",
+  "phone": "(+91) 7032210186",
+  "location": "Hyderabad, Telangana",
+  "linkedin": "linkedin.com/in/ksaigautham",
+  "availability": "Open to opportunities",
+  "interests": [
+    "Microservices Architecture",
+    "Event-Driven Systems",
+    "Full Stack Development",
+    "DevOps & Cloud"
+  ]
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-terminal">
+                        <div class="terminal-header-small">
+                            <div class="terminal-controls-small">
+                                <span class="control-small close"></span>
+                                <span class="control-small minimize"></span>
+                                <span class="control-small maximize"></span>
+                            </div>
+                            <span class="terminal-title-small">send-message.sh</span>
+                        </div>
+                        <form class="terminal-form">
+                            <div class="form-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">echo "Your Name:" &&</span>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">echo "Email:" &&</span>
+                                <input type="email" placeholder="your.email@domain.com" required>
+                            </div>
+                            <div class="form-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">echo "Subject:" &&</span>
+                                <input type="text" placeholder="Message subject" required>
+                            </div>
+                            <div class="form-line">
+                                <span class="prompt">$</span> 
+                                <span class="command">cat > message.txt</span>
+                                <textarea placeholder="Your message here..." rows="4" required></textarea>
+                            </div>
+                            <div class="form-line">
+                                <button type="submit" class="btn btn-terminal">
+                                    <span class="prompt">$</span> ./send-message.sh
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/ksaigautham" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fas fa-file-code"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-terminal">
+                    <span class="prompt">$</span> 
+                    <span class="command">echo "© 2024 Sai Gautham Kishtapuram. Built with ❤️ and lots of ☕"</span>
+                </div>
+                <div class="footer-info">
+                    <span>Last updated: $(date)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Typing animation for terminal
+        const typingElement = document.querySelector('.typing-animation');
+        if (typingElement) {
+            const text = typingElement.textContent;
+            typingElement.textContent = '';
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    typingElement.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            
+            setTimeout(typeWriter, 2000);
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
